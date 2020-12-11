@@ -135,7 +135,12 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
 
             }
             else{
-                resultAsPerUser=number1/number2;
+                if(number2!=0) {
+                    resultAsPerUser = number1 / number2;
+                }
+                else {
+                    resultAsPerUser=-1;
+                }
             }
             if(String.valueOf(resultAsPerUser).equals(numResult.getText().toString())){
                 score++;

@@ -68,6 +68,7 @@ public class QuestionModel {
 
        }
        else {
+
            num=new Random().nextInt(range-MEDIUM_RANGE)+MEDIUM_RANGE;
        }
 
