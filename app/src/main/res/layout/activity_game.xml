@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:background="@drawable/game_background"
+    tools:context=".GameActivity">
+
+    <TextView
+        android:id="@+id/scoreText"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/circle_white"
+        android:gravity="center"
+        android:text="12"
+        android:textAlignment="center"
+        android:textColor="@color/num_back_orange"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/countDownTimer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/countDownTimer" />
+
+    <TextView
+        android:id="@+id/countDownTimer"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/circle_white"
+        android:gravity="center"
+        android:text="12"
+        android:textAlignment="center"
+        android:textColor="@color/num_back_orange"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/num1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/mumber_bg"
+        android:elevation="10dp"
+        android:fontFamily="cursive"
+        android:padding="16dp"
+        android:text="48"
+        android:textAlignment="center"
+
+        android:textColor="@color/white"
+
+        android:textSize="32sp"
+
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/operatorOptionAdd"
+        app:layout_constraintEnd_toStartOf="@+id/operator1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/countDownTimer"
+        app:layout_constraintVertical_bias="0.39999998" />
+
+    <TextView
+        android:id="@+id/operator1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/mumber_bg"
+        android:textAlignment="center"
+        android:elevation="10dp"
+        android:paddingStart="32dp"
+        android:paddingTop="16dp"
+        android:paddingEnd="32dp"
+        android:paddingBottom="16dp"
+        android:text="\?"
+        android:backgroundTint="@color/white"
+
+        android:textColor="@color/num_back_orange"
+
+        android:textSize="24sp"
+
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/num1"
+        app:layout_constraintEnd_toStartOf="@+id/num2"
+        app:layout_constraintStart_toEndOf="@+id/num1"
+        app:layout_constraintTop_toTopOf="@+id/num1"
+        app:layout_constraintVertical_bias="0.434" />
+
+    <TextView
+        android:id="@+id/num2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/mumber_bg"
+        android:textAlignment="center"
+        android:elevation="10dp"
+        android:padding="16dp"
+        android:text="48"
+        android:fontFamily="cursive"
+        android:textColor="@color/white"
+
+        android:textSize="32sp"
+
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/num1"
+        app:layout_constraintEnd_toStartOf="@+id/operator2"
+        app:layout_constraintStart_toEndOf="@+id/operator1"
+        app:layout_constraintTop_toTopOf="@+id/num1" />
+
+    <TextView
+        android:id="@+id/operator2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/mumber_bg"
+        android:textAlignment="center"
+        android:elevation="10dp"
+        android:paddingStart="32dp"
+        android:paddingTop="16dp"
+        android:paddingEnd="32dp"
+        android:paddingBottom="16dp"
+
+
+        android:text="="
+        android:backgroundTint="@color/white"
+
+        android:textColor="@color/num_back_orange"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/operator1"
+        app:layout_constraintEnd_toStartOf="@+id/numResult"
+        app:layout_constraintStart_toEndOf="@+id/num2"
+        app:layout_constraintTop_toTopOf="@+id/operator1"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/numResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/mumber_bg"
+        android:textAlignment="center"
+        android:elevation="10dp"
+        android:padding="16dp"
+        android:text="96"
+        android:fontFamily="cursive"
+        android:textColor="@color/white"
+
+        android:textSize="32sp"
+
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/num2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/operator2"
+        app:layout_constraintTop_toTopOf="@+id/num2" />
+
+
+    <TextView
+        android:id="@+id/operatorOptionAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/mumber_bg"
+        android:backgroundTint="@color/white"
+        android:elevation="10dp"
+        android:paddingStart="32dp"
+        android:paddingTop="16dp"
+
+
+        android:paddingEnd="32dp"
+        android:paddingBottom="16dp"
+
+        android:text="+"
+        android:textAlignment="center"
+        android:textColor="@color/num_back_orange"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/operatorOptionSubtract"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/mumber_bg"
+        android:textAlignment="center"
+        android:backgroundTint="@color/white"
+        android:elevation="10dp"
+        android:paddingStart="32dp"
+
+
+        android:paddingTop="16dp"
+        android:paddingEnd="32dp"
+
+        android:paddingBottom="16dp"
+        android:text="-"
+        android:textColor="@color/num_back_orange"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/operatorOptionAdd"
+        app:layout_constraintStart_toEndOf="@+id/operatorOptionAdd"
+        app:layout_constraintTop_toTopOf="@+id/operatorOptionAdd" />
+
+    <TextView
+        android:id="@+id/operatorOptionMul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/mumber_bg"
+        android:textAlignment="center"
+        android:backgroundTint="@color/white"
+        android:elevation="10dp"
+
+
+        android:paddingStart="32dp"
+        android:paddingTop="16dp"
+
+        android:paddingEnd="32dp"
+        android:paddingBottom="16dp"
+        android:text="X"
+        android:textColor="@color/num_back_orange"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/operatorOptionSubtract"
+        app:layout_constraintStart_toEndOf="@+id/operatorOptionSubtract"
+        app:layout_constraintTop_toTopOf="@+id/operatorOptionSubtract"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/operatorOptionDivide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/mumber_bg"
+        android:textAlignment="center"
+        android:backgroundTint="@color/white"
+        android:elevation="10dp"
+        android:paddingStart="32dp"
+
+
+        android:paddingTop="16dp"
+        android:paddingEnd="32dp"
+
+        android:paddingBottom="16dp"
+        android:text="/"
+        android:textColor="@color/num_back_orange"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/operatorOptionMul"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/operatorOptionMul"
+        app:layout_constraintTop_toTopOf="@+id/operatorOptionMul" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/scoreCardView"
+    android:background="@color/black"
+
+        app:cardCornerRadius="30dp"
+
+        >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:padding="16dp"
+        android:background="#52FFFFFF"
+    >
+
+        <TextView
+            android:id="@+id/scoreDialogScoreText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your Score : "
+            android:gravity="center"
+            android:textAlignment="center"
+
+            android:textSize="24sp"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/scoreDialogRestart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:layout_marginEnd="24dp"
+
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/mumber_bg"
+            android:elevation="10dp"
+
+            android:fontFamily="cursive"
+
+            android:padding="16dp"
+
+            android:text="Restart"
+
+            android:textAlignment="center"
+
+
+            android:textColor="@color/white"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/scoreDialogClose"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/scoreDialogScoreText" />
+
+        <TextView
+            android:id="@+id/scoreDialogClose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:background="@drawable/mumber_bg"
+            android:elevation="10dp"
+
+            android:fontFamily="cursive"
+
+            android:padding="16dp"
+
+            android:text="Close"
+
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/scoreDialogRestart"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/scoreDialogRestart"
+            app:layout_constraintTop_toTopOf="@+id/scoreDialogRestart" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+

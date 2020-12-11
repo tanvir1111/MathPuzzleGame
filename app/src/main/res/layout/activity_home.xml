@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/game_background"
+    android:padding="24dp"
+    tools:context=".HomeActivity">
+
+    <TextView
+        android:id="@+id/home_level"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+
+
+
+        android:padding="24dp"
+        android:text="SELECT LEVEL"
+
+        android:textAlignment="center"
+        android:textStyle="bold"
+
+        android:textColor="@color/num_back_orange"
+
+
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/home_level_easy"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:onClick="gotoGame"
+
+        android:background="@drawable/mumber_bg"
+        android:elevation="10dp"
+        android:padding="24dp"
+
+        android:text="Easy"
+
+        android:textAlignment="center"
+
+
+        android:textColor="@color/white"
+
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/home_level_Medium"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/home_level"
+        app:layout_constraintVertical_bias="0.37" />
+
+    <TextView
+        android:id="@+id/home_level_Medium"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+
+        android:background="@drawable/mumber_bg"
+
+        android:elevation="10dp"
+
+
+        android:padding="24dp"
+        android:onClick="gotoGame"
+        android:text="Medium"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/home_level_easy"
+        app:layout_constraintEnd_toStartOf="@+id/home_Hard"
+        app:layout_constraintStart_toEndOf="@+id/home_level_easy"
+        app:layout_constraintTop_toTopOf="@+id/home_level_easy"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/home_Hard"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:onClick="gotoGame"
+        android:background="@drawable/mumber_bg"
+        android:elevation="10dp"
+        android:padding="24dp"
+
+        android:text="Hard"
+
+        android:textAlignment="center"
+
+
+        android:textColor="@color/white"
+
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/home_level_Medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.762"
+        app:layout_constraintStart_toEndOf="@+id/home_level_Medium"
+        app:layout_constraintTop_toTopOf="@+id/home_level_Medium"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
